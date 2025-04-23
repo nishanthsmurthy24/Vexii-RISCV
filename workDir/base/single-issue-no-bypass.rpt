@@ -1,0 +1,307 @@
+[info] welcome to sbt 1.10.0 (Oracle Corporation Java 11)
+[info] loading settings for project vexii-riscv-build from plugins.sbt ...
+[info] loading project definition from /ece/home/somas026/Project/Vexii-RISCV/project
+[info] loading settings for project ret from build.sbt ...
+[info] loading settings for project spinalhdl-build from plugin.sbt ...
+[info] loading project definition from /ece/home/somas026/Project/Vexii-RISCV/ext/SpinalHDL/project
+[info] loading settings for project all from build.sbt ...
+[info] set current project to VexiiRiscv (in build file:/ece/home/somas026/Project/Vexii-RISCV/)
+[info] running (fork) vexiiriscv.Generate --report-model
+[info] [Runtime] SpinalHDL dev    git head : a8c701dc4f7106cfc41a6745f815062e664233a0
+[info] [Runtime] JVM max memory : 30688.0MiB
+[info] [Runtime] Current date : 2025.03.26 11:41:13
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 2.352 : Checks and transforms
+[info] (toplevel/FetchCachelessPlugin_logic_bus_cmd_valid : out Bool)
+[info] (toplevel/FetchCachelessPlugin_logic_bus_cmd_payload_id : out UInt[1 bits])
+[info] (toplevel/FetchCachelessPlugin_logic_bus_cmd_payload_address : out UInt[32 bits])
+[info] (toplevel/LsuCachelessPlugin_logic_bus_cmd_valid : out Bool)
+[info] (toplevel/LsuCachelessPlugin_logic_bus_cmd_payload_id : out UInt[1 bits])
+[info] (toplevel/LsuCachelessPlugin_logic_bus_cmd_payload_write : out Bool)
+[info] (toplevel/LsuCachelessPlugin_logic_bus_cmd_payload_address : out UInt[32 bits])
+[info] (toplevel/LsuCachelessPlugin_logic_bus_cmd_payload_data : out Bits[32 bits])
+[info] (toplevel/LsuCachelessPlugin_logic_bus_cmd_payload_size : out UInt[2 bits])
+[info] (toplevel/LsuCachelessPlugin_logic_bus_cmd_payload_mask : out Bits[4 bits])
+[info] (toplevel/LsuCachelessPlugin_logic_bus_cmd_payload_io : out Bool)
+[info] (toplevel/LsuCachelessPlugin_logic_bus_cmd_payload_fromHart : out Bool)
+[info] (toplevel/LsuCachelessPlugin_logic_bus_cmd_payload_uopId : out UInt[16 bits])
+[info] [Progress] at 3.055 : Generate Verilog to .
+[info] [Warning] toplevel/FetchCachelessPlugin_logic_buffer_words : Mem[2*33 bits].readAsync can only be write first into Verilog
+[info] [Warning] 530 signals were pruned. You can call printPruned on the backend report to get more informations.
+[info] [Done] at 3.460
+[info] Execute lane : lane0
+[info] - Layer : early0
+[info]   - instruction : Rvi_ADD
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_SUB
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_SLT
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / SrcStageables_UNSIGNED / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_SLTU
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / SrcStageables_UNSIGNED / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_XOR
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_OR
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_AND
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_ADDI
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_SLTI
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / SrcStageables_UNSIGNED / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_SLTIU
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / SrcStageables_UNSIGNED / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_XORI
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_ORI_FULL
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_ANDI
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_LUI
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_AUIPC
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_IntAluPlugin_SEL / early0_IntAluPlugin_ALU_ADD_SUB / early0_IntAluPlugin_ALU_SLTX / early0_IntAluPlugin_ALU_BITWISE_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_SLL
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_BarrelShifterPlugin_SEL / BarrelShifterPlugin_LEFT / BarrelShifterPlugin_SIGNED / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_SRL
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_BarrelShifterPlugin_SEL / BarrelShifterPlugin_LEFT / BarrelShifterPlugin_SIGNED / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_SRA
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_BarrelShifterPlugin_SEL / BarrelShifterPlugin_LEFT / BarrelShifterPlugin_SIGNED / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_SLLI
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_BarrelShifterPlugin_SEL / BarrelShifterPlugin_LEFT / BarrelShifterPlugin_SIGNED / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_SRLI
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_BarrelShifterPlugin_SEL / BarrelShifterPlugin_LEFT / BarrelShifterPlugin_SIGNED / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_SRAI
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - decodes early0_BarrelShifterPlugin_SEL / BarrelShifterPlugin_LEFT / BarrelShifterPlugin_SIGNED / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_JAL
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_BranchPlugin_SEL / BranchPlugin_BRANCH_CTRL / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_JALR
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_BranchPlugin_SEL / BranchPlugin_BRANCH_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_2 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_BEQ
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_BranchPlugin_SEL / BranchPlugin_BRANCH_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_BNE
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_BranchPlugin_SEL / BranchPlugin_BRANCH_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_BLT
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_BranchPlugin_SEL / BranchPlugin_BRANCH_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / SrcStageables_UNSIGNED / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_BGE
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_BranchPlugin_SEL / BranchPlugin_BRANCH_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / SrcStageables_UNSIGNED / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_BLTU
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_BranchPlugin_SEL / BranchPlugin_BRANCH_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / SrcStageables_UNSIGNED / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_BGEU
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_BranchPlugin_SEL / BranchPlugin_BRANCH_CTRL / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / SrcStageables_REVERT / SrcStageables_ZERO / SrcStageables_UNSIGNED / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_CSRRW
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 1
+[info]     - may flush up to stage 0
+[info]     - dont flush from stage 0
+[info]     - decodes CsrAccessPlugin_SEL / CsrAccessPlugin_CSR_IMM / CsrAccessPlugin_CSR_MASK / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_3 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_1_ENABLE
+[info]   - instruction : Rvi_CSRRS
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 1
+[info]     - may flush up to stage 0
+[info]     - dont flush from stage 0
+[info]     - decodes CsrAccessPlugin_SEL / CsrAccessPlugin_CSR_IMM / CsrAccessPlugin_CSR_MASK / CsrAccessPlugin_CSR_CLEAR / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_3 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_1_ENABLE
+[info]   - instruction : Rvi_CSRRC
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 1
+[info]     - may flush up to stage 0
+[info]     - dont flush from stage 0
+[info]     - decodes CsrAccessPlugin_SEL / CsrAccessPlugin_CSR_IMM / CsrAccessPlugin_CSR_MASK / CsrAccessPlugin_CSR_CLEAR / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_3 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_1_ENABLE
+[info]   - instruction : Rvi_CSRRWI
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 1
+[info]     - may flush up to stage 0
+[info]     - dont flush from stage 0
+[info]     - decodes CsrAccessPlugin_SEL / CsrAccessPlugin_CSR_IMM / CsrAccessPlugin_CSR_MASK / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_3 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_1_ENABLE
+[info]   - instruction : Rvi_CSRRSI
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 1
+[info]     - may flush up to stage 0
+[info]     - dont flush from stage 0
+[info]     - decodes CsrAccessPlugin_SEL / CsrAccessPlugin_CSR_IMM / CsrAccessPlugin_CSR_MASK / CsrAccessPlugin_CSR_CLEAR / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_3 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_1_ENABLE
+[info]   - instruction : Rvi_CSRRCI
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 1
+[info]     - may flush up to stage 0
+[info]     - dont flush from stage 0
+[info]     - decodes CsrAccessPlugin_SEL / CsrAccessPlugin_CSR_IMM / CsrAccessPlugin_CSR_MASK / CsrAccessPlugin_CSR_CLEAR / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_3 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_1_ENABLE
+[info]   - instruction : Rvi_LB
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 2
+[info]     - may flush up to stage 0
+[info]     - decodes AguPlugin_SEL / AguPlugin_LOAD / AguPlugin_STORE / AguPlugin_ATOMIC / AguPlugin_FLOAT / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_4 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_2_ENABLE
+[info]   - instruction : Rvi_LH
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 2
+[info]     - may flush up to stage 0
+[info]     - decodes AguPlugin_SEL / AguPlugin_LOAD / AguPlugin_STORE / AguPlugin_ATOMIC / AguPlugin_FLOAT / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_4 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_2_ENABLE
+[info]   - instruction : Rvi_LW
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 2
+[info]     - may flush up to stage 0
+[info]     - decodes AguPlugin_SEL / AguPlugin_LOAD / AguPlugin_STORE / AguPlugin_ATOMIC / AguPlugin_FLOAT / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_4 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_2_ENABLE
+[info]   - instruction : Rvi_LBU
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 2
+[info]     - may flush up to stage 0
+[info]     - decodes AguPlugin_SEL / AguPlugin_LOAD / AguPlugin_STORE / AguPlugin_ATOMIC / AguPlugin_FLOAT / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_4 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_2_ENABLE
+[info]   - instruction : Rvi_LHU
+[info]     - read  integer[RS1], stage 0
+[info]     - write integer[RD], stage 3
+[info]     - completion stage 2
+[info]     - may flush up to stage 0
+[info]     - decodes AguPlugin_SEL / AguPlugin_LOAD / AguPlugin_STORE / AguPlugin_ATOMIC / AguPlugin_FLOAT / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / lane0_IntFormatPlugin_logic_SIGNED / lane0_IntFormatPlugin_logic_WIDTH_ID / lane0_integer_WriteBackPlugin_SEL / COMPLETION_AT_4 / BYPASSED_AT_1 / BYPASSED_AT_2 / BYPASSED_AT_3 / BYPASSED_AT_4 / execute_lane0_logic_completions_onCtrl_2_ENABLE
+[info]   - instruction : Rvi_SB
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - completion stage 1
+[info]     - may flush up to stage 0
+[info]     - dont flush from stage 1
+[info]     - decodes AguPlugin_SEL / AguPlugin_LOAD / AguPlugin_STORE / AguPlugin_ATOMIC / AguPlugin_FLOAT / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / COMPLETION_AT_3 / execute_lane0_logic_completions_onCtrl_1_ENABLE
+[info]   - instruction : Rvi_SH
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - completion stage 1
+[info]     - may flush up to stage 0
+[info]     - dont flush from stage 1
+[info]     - decodes AguPlugin_SEL / AguPlugin_LOAD / AguPlugin_STORE / AguPlugin_ATOMIC / AguPlugin_FLOAT / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / COMPLETION_AT_3 / execute_lane0_logic_completions_onCtrl_1_ENABLE
+[info]   - instruction : Rvi_SW
+[info]     - read  integer[RS1], stage 0
+[info]     - read  integer[RS2], stage 0
+[info]     - completion stage 1
+[info]     - may flush up to stage 0
+[info]     - dont flush from stage 1
+[info]     - decodes AguPlugin_SEL / AguPlugin_LOAD / AguPlugin_STORE / AguPlugin_ATOMIC / AguPlugin_FLOAT / SrcStageables_REVERT / SrcStageables_ZERO / early0_SrcPlugin_logic_SRC1_CTRL / early0_SrcPlugin_logic_SRC2_CTRL / COMPLETION_AT_3 / execute_lane0_logic_completions_onCtrl_1_ENABLE
+[info]   - instruction : Rvi_FENCE
+[info]     - completion stage 0
+[info]     - decodes LsuCachelessPlugin_FENCE / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_ECALL
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_EnvPlugin_SEL / early0_EnvPlugin_OP / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_EBREAK
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_EnvPlugin_SEL / early0_EnvPlugin_OP / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_MRET
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_EnvPlugin_SEL / early0_EnvPlugin_OP / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_FENCE_I
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_EnvPlugin_SEL / early0_EnvPlugin_OP / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[info]   - instruction : Rvi_WFI
+[info]     - completion stage 0
+[info]     - may flush up to stage 0
+[info]     - decodes early0_EnvPlugin_SEL / early0_EnvPlugin_OP / COMPLETION_AT_2 / execute_lane0_logic_completions_onCtrl_0_ENABLE
+[success] Total time: 13 s, completed Mar 26, 2025, 11:41:17 AM

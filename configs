@@ -1,0 +1,110 @@
+Usage: VexiiRiscv [options]
+  --help                   prints this usage text
+  --report-model
+  --xlen <value>
+  --decoders <value>
+  --lanes <value>
+  --decoder-at <value>
+  --dispatcher-at <value>
+  --reset-vector <value>
+  --relaxed-div
+  --relaxed-mul-inputs
+  --relaxed-branch
+  --relaxed-shift
+  --relaxed-src
+  --relaxed-btb
+  --stressed-btb
+  --stressed-div
+  --stressed-branch
+  --stressed-shift
+  --stressed-src
+  --stressed-fpu
+  --with-mul
+  --with-div
+  --with-rvm
+  --with-rva
+  --with-rvf
+  --with-rvd
+  --with-rvc
+  --with-rvZb
+  --with-whiteboxer-outputs
+  --with-hart-id-input
+  --fma-reduced-accuracy
+  --fpu-ignore-subnormal
+  --with-aligner-buffer
+  --with-dispatcher-buffer
+  --with-supervisor
+  --with-user
+  --without-mmu
+  --without-mul
+  --without-div
+  --with-mul
+  --with-div
+  --with-gshare
+  --with-btb
+  --with-ras
+  --without-ras
+  --btb-single-port-ram
+  --with-late-alu
+  --with-store-rs2-late
+  --btb-sets <value>
+  --btb-hash-width <value>
+  --regfile-async
+  --regfile-sync
+  --regfile-dual-ports
+  --regfile-infer-ports
+  --allow-bypass-from <value>
+  --performance-counters <value>
+  --without-performance-scountovf
+  --with-fetch-l1
+  --with-lsu-l1
+  --fetch-axi4
+  --fetch-wishbone
+  --lsu-axi4
+  --lsu-wishbone
+  --lsu-l1-axi4
+  --lsu-l1-wishbone
+  --fetch-l1
+  --lsu-l1
+  --fetch-l1-sets <value>
+  --fetch-l1-ways <value>
+  --fetch-l1-refill-count <value>
+  --fetch-l1-hardware-prefetch <value>
+  --fetch-l1-mem-data-width-min <value>
+  --fetch-reduced-bank
+  --lsu-l1-sets <value>
+  --lsu-l1-ways <value>
+  --lsu-l1-store-buffer-slots <value>
+  --lsu-l1-store-buffer-ops <value>
+  --lsu-hardware-prefetch <value>
+  --lsu-software-prefetch
+  --lsu-l1-refill-count <value>
+  --lsu-l1-writeback-count <value>
+  --lsu-l1-mem-data-width-min <value>
+  --lsu-l1-coherency
+  --with-lsu-bypass
+  --without-lsu-bypass
+  --with-iterative-shift
+  --div-radix <value>
+  --div-impl <value>
+  --div-ipc
+  --fetch-fork-at <value>
+  --lsu-fork-at <value>
+  --lsu-pma-at <value>
+  --debug-privileged
+  --debug-triggers <value>
+  --debug-triggers-lsu
+  --debug-jtag-tap
+  --with-boot-mem-init
+  --physical-width <value>
+  --mul-keep-src
+  --mmu-sync-read
+  --pmp-size <value>
+  --pmp-granularity <value>
+  --pmp-tor-disable
+  --with-rdtime
+  --with-cfu
+  --dual-issue
+  --max-ipc
+  --analyse-path <value>   Print logic paths. ex : --analyse-paths from=myComponent/mySourceSignal,to=myComponent/myDestinationSignal
+  --region <value>         Specify a memory region, for instance : --region base=80000000,size=80000000,main=1,exe=1 --region base=10000000,size=10000000,main=0,exe=0
